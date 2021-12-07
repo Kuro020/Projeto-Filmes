@@ -3,13 +3,13 @@ include_once("header.php");
 include_once("../model/conexao.php");
 include_once("../model/bancoFilmes.php");
 ?>
+<div class="card-body">
+        <h1 class="d-flex justify-content-center">FILMES EM CARTAZ</h1>
+    </div>
 <?php
 $filmes = listaTudoFilmes($conexao);
 foreach ($filmes as $filme) :
 ?>
-    <div class="card-body">
-        <h1 class="d-flex justify-content-center">FILMES EM CARTAZ</h1>
-    </div>
     <div class="card mb-3" style="max-width: 540px;">
         <div class="row g-0">
             <div class="col-md-4">

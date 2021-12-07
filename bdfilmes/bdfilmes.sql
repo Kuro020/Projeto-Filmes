@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 02-Dez-2021 às 21:18
+-- Tempo de geração: 07-Dez-2021 às 21:23
 -- Versão do servidor: 10.4.21-MariaDB
--- versão do PHP: 7.3.31
+-- versão do PHP: 8.0.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -42,6 +42,15 @@ CREATE TABLE `tbfilmes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Extraindo dados da tabela `tbfilmes`
+--
+
+INSERT INTO `tbfilmes` (`codFil`, `nomeFil`, `duracaoFil`, `precoFil`, `generoFil`, `classificacaoFil`, `avaliacaoFil`, `imgFil`, `estreiaFil`, `direcaoFil`, `roteiroFil`) VALUES
+(13, 'Godzilla vs Kong', '2 horas', 'R$20', 'Ação', '+14', '5/5', 'godzillavskong.jpg', '6 de Maio de 2021', 'Adam Wingard', 'Eric Pearson/Max Borenstein'),
+(14, 'Sonic', '2 horas', 'R$20', 'Ação', 'Livre', '5/5', 'sonic.jpg', '25 de Dezembro de 2021', 'Jeff Fowler', 'Patrick Casey/Josh Miller'),
+(15, 'Homem aranha 3', '2 horas', 'R$20', 'Ação e Aventura', '+14', '5/5', 'homemaranha.jpg', '13 de dezembro de 2021', 'Jon Watts', 'Chris McKenna');
+
+--
 -- Índices para tabelas despejadas
 --
 
@@ -59,7 +68,7 @@ ALTER TABLE `tbfilmes`
 -- AUTO_INCREMENT de tabela `tbfilmes`
 --
 ALTER TABLE `tbfilmes`
-  MODIFY `codFil` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `codFil` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -21,9 +21,14 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="navbar-brand" type="button" href="../views/filmes.php" id="navbarDropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Filmes
                         </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../views/cadastroFilmes.php">Cadastro</a></li>
+                            <li><a class="dropdown-item" href="../views/ListaTudoFilmes.php">Lista</a></li>
+                            <li><a class="dropdown-item" href="../views/ListaTudoFilmesCod.php">Busca</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>

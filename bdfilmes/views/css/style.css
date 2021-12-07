@@ -4,8 +4,11 @@ body{
 }
 
 .container{
-    background: rgb(2, 137, 139);
+    background: rgb(13, 210, 245);
 }
 
+#formulario{
+   margin: 20px;
+}
 
 

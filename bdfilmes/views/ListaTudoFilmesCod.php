@@ -16,7 +16,7 @@ include_once("../model/bancoFilmes.php");
         </div>
     </form>
 </div>
-<table class="table">
+<table class="table bg-info ">
     <thead>
         <tr>
             <th scope="col">Código</th>
@@ -37,7 +37,7 @@ include_once("../model/bancoFilmes.php");
         ?>
                 <tr>
                     <th scope="row"><?= $filmes['codFil'] ?></th>
-                    <th scope="row"><img src=<?=$filmes['imgFil']?>></th>
+                    <th scope="row"><img src="img/<?=$filmes['imgFil']?>" width="50px"class="img-fluid rounded-start" ></th>
                     <td><?= $filmes['nomeFil'] ?></td>
                     <td><?= $filmes['generoFil'] ?></td>
                     <td><?= $filmes['precoFil'] ?></td>
